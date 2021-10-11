@@ -4,9 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <title>Assignment: Object Creation</title>
+
+    <link rel="stylesheet" href="assets/CSS/normalize.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/CSS/style.css">
     
+</head>
+<body class="w-full">
+    <div class="container">
+        <h2 class="text-center p-10 text-3xl">Object Creation</h2>
+        <div class="grid grid-cols-2 gap-4 p-10">
+            <section class="form-container max-w-xl mr-10">
+                <h2 class="text-2xl w-full mt-4 lg:w-1/2 m-auto">Create a Character</h2>
+                <form class="grid justify-items-center">
+                    <label></label>
+                    <input type="text" id="" placeholder="Name" class="p-2 text-lg w-full mt-4 lg:w-1/2 rounded-md border-black border-2">
+                    <label></label>
+                    <input type="number" id="" placeholder="Age" class="p-2 text-lg w-full mt-4 lg:w-1/2 rounded-md border-black border-2">
+                    <label></label>
+                    <input type="text" id="" placeholder=" Personal Skill" class="p-2 text-lg w-full mt-4 lg:w-1/2 rounded-md border-black border-2">
+                    <input type="button" id="submit" value="Submit" class="block mt-10 m-auto w-full lg:w-1/2 p-3 rounded-md border-black border-2">
+                </form>
+                <div id="confirm-msg"></div>
+            </section>
+            <section class="output-container">
+                <h2>Output</h2>
+            </section>
+        </div>
+    </div>
+
+    <script src="assets/JS/main.js" defer></script>
+    <script src="assets/JS/utils.js" defer></script>
 </body>
 </html>

@@ -13,10 +13,11 @@
 </head>
 <body class="w-full">
     <div class="container">
-        <h2 class="text-center p-10 text-3xl">Object Creation</h2>
+        <h1 class="text-center p-10 text-3xl">Object Creation</h1>
         <div class="grid grid-cols-2 gap-4 p-10">
             <section class="form-container max-w-xl mr-10">
                 <h2 class="text-2xl w-full mt-4 lg:w-1/2 m-auto">Create a Character</h2>
+                <div id="confirm-msg" class="mt-2"></div>
                 <form class="grid justify-items-center">
                     <label for=name></label>
                     <input type="text" id="name" placeholder="Name" class="p-2 text-base w-full mt-4 lg:w-1/2 rounded-md border-black border-2" required>
@@ -25,13 +26,12 @@
                     <label for="talent"></label>
                     <input type="text" id="talent" placeholder="Talent" class="p-2 text-base w-full mt-4 lg:w-1/2 rounded-md border-black border-2" required>
                     <input type="submit" id="addBtn" value="Add Character" class="block mt-4 m-auto w-full lg:w-1/2 p-3 rounded-md border-black border-2">
-                    <input type="submit" id="displayBtn" value="Display All" class="block mt-4 m-auto w-full lg:w-1/2 p-3 rounded-md border-black border-2">
+                    <input type="button" id="displayBtn" value="Display All" class="block mt-4 m-auto w-full lg:w-1/2 p-3 rounded-md border-black border-2">
                 </form>
-                <div id="confirm-msg"></div>
             </section>
             <section class="output-container">
                 <h2 class="text-2xl w-full mt-4 lg:w-1/2 m-auto">Output</h2>
-                <p id="output"></p>
+                <ul id="output"><li class="mt-4"></li></ul>
             </section>
         </div>
     </div>

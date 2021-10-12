@@ -18,23 +18,25 @@
             <section class="form-container max-w-xl mr-10">
                 <h2 class="text-2xl w-full mt-4 lg:w-1/2 m-auto">Create a Character</h2>
                 <form class="grid justify-items-center">
-                    <label></label>
-                    <input type="text" id="" placeholder="Name" class="p-2 text-lg w-full mt-4 lg:w-1/2 rounded-md border-black border-2">
-                    <label></label>
-                    <input type="number" id="" placeholder="Age" class="p-2 text-lg w-full mt-4 lg:w-1/2 rounded-md border-black border-2">
-                    <label></label>
-                    <input type="text" id="" placeholder=" Personal Skill" class="p-2 text-lg w-full mt-4 lg:w-1/2 rounded-md border-black border-2">
-                    <input type="button" id="submit" value="Submit" class="block mt-10 m-auto w-full lg:w-1/2 p-3 rounded-md border-black border-2">
+                    <label for=name></label>
+                    <input type="text" id="name" placeholder="Name" class="p-2 text-base w-full mt-4 lg:w-1/2 rounded-md border-black border-2" required>
+                    <label for="age"></label>
+                    <input type="number" id="age" placeholder="Age" class="p-2 text-base w-full mt-4 lg:w-1/2 rounded-md border-black border-2" min="0" max="100" step="1" required>
+                    <label for="talent"></label>
+                    <input type="text" id="talent" placeholder="Talent" class="p-2 text-base w-full mt-4 lg:w-1/2 rounded-md border-black border-2" required>
+                    <input type="submit" id="addBtn" value="Add Character" class="block mt-4 m-auto w-full lg:w-1/2 p-3 rounded-md border-black border-2">
+                    <input type="submit" id="displayBtn" value="Display All" class="block mt-4 m-auto w-full lg:w-1/2 p-3 rounded-md border-black border-2">
                 </form>
                 <div id="confirm-msg"></div>
             </section>
             <section class="output-container">
-                <h2>Output</h2>
+                <h2 class="text-2xl w-full mt-4 lg:w-1/2 m-auto">Output</h2>
+                <p id="output"></p>
             </section>
         </div>
     </div>
 
-    <script src="assets/JS/main.js" defer></script>
     <script src="assets/JS/utils.js" defer></script>
+    <script src="assets/JS/main.js" defer></script>
 </body>
 </html>

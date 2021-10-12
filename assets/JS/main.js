@@ -1,7 +1,15 @@
 // At least 3 input fields strings and numbers
 
-class Movie{
-
+class Character{
+    constructor(name, age, talent){
+        this.name = name;
+        this.age = age;
+        this.talent = talent;
+        this.height = Utility.GenHeight(this.age);
+    }
+    showOff(){
+        return `${this.name} shows off their skill in ${this.talent}`
+    }
 }
 
 
@@ -12,15 +20,27 @@ class Movie{
 class Main {
     
     constructor(){
-        
+        this.chars = [];
+        document.querySelector("#addBtn").addEventListener("click", e=> this.add(e));
+
+        document.querySelector("#displayBtn").addEventListener("click", e=> this.display(e));
     }
-    // Confirmation message
-
-    // Display button
-
-    // Add button
-
+    
     // Form validation
+    add(e){
+        const name=document.querySelector("#name");
+        const age=document.querySelector("#age");
+        const talent=document.querySelector("#talent");
+        if (name.checkValidity() && age.checkValidity() && talent.checkValidity()){
+            e.preventDefault(); 
+            let char = new Character(name.value, age.value, talent.value);
+            this.chars.push(char)
+        }
+    }
+    // Display button
+    display(e){
+
+    }   
 }
 
 (()=>{
